@@ -1,0 +1,9 @@
+.vscode
+output
+sandbox
+index.dSYM
+
+*.obj
+*.o
+*.pdb
+*.exe
