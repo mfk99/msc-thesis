@@ -40,8 +40,8 @@ vector<int> requestUserVariables() {
 }
 
 void enterSchedulingGenerator(){
-    
-    vector userVariables = requestUserVariables();
+
+    vector<int> userVariables = requestUserVariables();
     int days = userVariables[0];
     int hours = userVariables[1];
     int classRooms = userVariables[2];
@@ -62,9 +62,6 @@ void enterSchedulingGenerator(){
     1. Two classes can't have the same room
     2. Every class must have a classroom
     */
-
-    int timeSlots = days * hours;
-    long long totalCourseHours = (long long)courses * (long long)courseHours;
 
     cout << "Creating clauses for " << courseHours << " hours per course ("
          << totalCourseHours << " course-hours total) with "
